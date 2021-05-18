@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-color: #fff8df;
+    }
+    #college{
+        font-family: montserrat;
+        border-collapse: collapse;
+        margin-left: 180px;    
+    }
+    #college td, #college th{
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    #college tr:nth-child(even){
+        background-color: #eccb54;
+    }
+    #college tr:hover{
+       background-color: lightblue;
+    }
+    #college th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #F2C110;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<table id="college">
+<thead>
+<tr><th>Name</th><th>City</th><th>State</th><th>Score</th><th>Rank</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Indian Institute of Technology Madras</td>
+<td>Chennai</td>
+<td>Tamil Nadu</td>
+<td>88.95</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Bombay</td>
+<td>Mumbai</td>
+<td>Maharashtra</td>
+<td>84.82</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Delhi</td>
+<td>New Delhi</td>
+<td>Delhi</td>
+<td>82.18</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Kharagpur</td>
+<td>Kharagpur</td>
+<td>West Bengal</td>
+<td>77.78</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Kanpur</td>
+<td>Kanpur</td>
+<td>Uttar Pradesh</td>
+<td>75.24</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Roorkee</td>
+<td>Roorkee</td>
+<td>Uttarakhand</td>
+<td>72.57</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Guwahati</td>
+<td>Guwahati</td>
+<td>Assam</td>
+<td>69.25</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Anna University</td>
+<td>Chennai</td>
+<td>Tamil Nadu</td>
+<td>67.04</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Hyderabad</td>
+<td>Hyderabad</td>
+<td>Telangana</td>
+<td>60.87</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Institute of Chemical Technology</td>
+<td>Mumbai</td>
+<td>Maharashtra</td>
+<td>60.63</td>
+<td>10</td>
+</tr>
+<tr>
+<td>National Institute of Technology Tiruchirappalli</td>
+<td>Tiruchirappalli</td>
+<td>Tamil Nadu</td>
+<td>60.35</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Jadavpur University</td>
+<td>Kolkata</td>
+<td>West Bengal</td>
+<td>59.82</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology (Indian School of Mines) Dhanbad</td>
+<td>Dhanbad</td>
+<td>Jharkhand</td>
+<td>59.24</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Indore</td>
+<td>Indore</td>
+<td>Madhya Pradesh</td>
+<td>57.95</td>
+<td>14</td>
+</tr>
+<tr>
+<td>National Institute of Technology Rourkela</td>
+<td>Rourkela</td>
+<td>Odisha</td>
+<td>57.05</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Vellore Institute of Technology</td>
+<td>Vellore</td>
+<td>Tamil Nadu</td>
+<td>57.02</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Birla Institute of Technology &amp; Science</td>
+<td>Pilani</td>
+<td>Rajasthan</td>
+<td>56.98</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Bhubaneswar</td>
+<td>Bhubaneswar</td>
+<td>Odisha</td>
+<td>56.89</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology (Banaras Hindu University) Varanasi</td>
+<td>Varanasi</td>
+<td>Uttar Pradesh</td>
+<td>56.62</td>
+<td>19</td>
+</tr>
+<tr>
+<td>Thapar Institute of Engineering and Technology</td>
+<td>Patiala</td>
+<td>Punjab</td>
+<td>56.14</td>
+<td>20</td>
+</tr>
+<tr>
+<td>National Institute of Technology Surathkal</td>
+<td>Surathkal</td>
+<td>Karnataka</td>
+<td>53.16</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Ropar</td>
+<td>Rupnagar</td>
+<td>Punjab</td>
+<td>52.8</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Indian Institute of Space Science and Technology</td>
+<td>Thiruvananthapuram</td>
+<td>Kerala</td>
+<td>52.74</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Patna</td>
+<td>Patna</td>
+<td>Bihar</td>
+<td>52.37</td>
+<td>24</td>
+</tr>
+<tr>
+<td>National Institute of Technology Warangal</td>
+<td>Warangal</td>
+<td>Telangana</td>
+<td>51.82</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Birla Institute of Technology</td>
+<td>Ranchi</td>
+<td>Jharkhand</td>
+<td>51.12</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Gandhinagar</td>
+<td>Gandhinagar</td>
+<td>Gujarat</td>
+<td>50.45</td>
+<td>27</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Mandi</td>
+<td>Mandi</td>
+<td>Himachal Pradesh</td>
+<td>50.44</td>
+<td>28</td>
+</tr>
+<tr>
+<td>PSG College of Technology</td>
+<td>Coimbatore</td>
+<td>Tamil Nadu</td>
+<td>50.31</td>
+<td>29</td>
+</tr>
+<tr>
+<td>Indian Institute of Engineering Science and Technology, Shibpur</td>
+<td>Howrah</td>
+<td>West Bengal</td>
+<td>49.9</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Visvesvaraya National Institute of Technology</td>
+<td>Nagpur</td>
+<td>Maharashtra</td>
+<td>49.55</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Jamia Millia Islamia</td>
+<td>New Delhi</td>
+<td>Delhi</td>
+<td>49.15</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Shanmugha Arts Science Technology &amp; Research Academy</td>
+<td>Thanjavur</td>
+<td>Tamil Nadu</td>
+<td>48.74</td>
+<td>33</td>
+</tr>
+<tr>
+<td>Amity University</td>
+<td>Gautam Budh Nagar</td>
+<td>Uttar Pradesh</td>
+<td>48.66</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Aligarh Muslim University</td>
+<td>Aligarh</td>
+<td>Uttar Pradesh</td>
+<td>48.26</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Sri Sivasubramaniya Nadar College of Engineering</td>
+<td>Kancheepuram</td>
+<td>Tamil Nadu</td>
+<td>48.1</td>
+<td>36</td>
+</tr>
+<tr>
+<td>Sathyabama Institute of Science and Technology</td>
+<td>Chennai</td>
+<td>Tamil Nadu</td>
+<td>47.26</td>
+<td>37</td>
+</tr>
+<tr>
+<td>International Institute of Information Technology</td>
+<td>Hyderabad</td>
+<td>Telangana</td>
+<td>46.87</td>
+<td>38</td>
+</tr>
+<tr>
+<td>Manipal Institute of Technology</td>
+<td>Manipal</td>
+<td>Karnataka</td>
+<td>46.66</td>
+<td>39</td>
+</tr>
+<tr>
+<td>Thiagarajar College of Engineering</td>
+<td>Madurai</td>
+<td>Tamil Nadu</td>
+<td>46.66</td>
+<td>39</td>
+</tr>
+<tr>
+<td>Delhi Technological University</td>
+<td>New Delhi</td>
+<td>Delhi</td>
+<td>46.57</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Jawaharlal Nehru Technological University</td>
+<td>Hyderabad</td>
+<td>Telangana</td>
+<td>46.4</td>
+<td>42</td>
+</tr>
+<tr>
+<td>National Institute of Technology Kurukshetra</td>
+<td>Kurukshetra</td>
+<td>Haryana</td>
+<td>46.29</td>
+<td>43</td>
+</tr>
+<tr>
+<td>National Institute of Industrial Engineering</td>
+<td>Mumbai</td>
+<td>Maharashtra</td>
+<td>45.91</td>
+<td>44</td>
+</tr>
+<tr>
+<td>College of Engineering</td>
+<td>Pune</td>
+<td>Maharashtra</td>
+<td>45.9</td>
+<td>45</td>
+</tr>
+<tr>
+<td>SRM Institute of Science and Technology</td>
+<td>Chennai</td>
+<td>Tamil Nadu</td>
+<td>45.51</td>
+<td>46</td>
+</tr>
+<tr>
+<td>National Institute of Technology Durgapur</td>
+<td>Durgapur</td>
+<td>West Bengal</td>
+<td>45.34</td>
+<td>47</td>
+</tr>
+<tr>
+<td>Motilal Nehru National Institute of Technology</td>
+<td>Allahabad</td>
+<td>Uttar Pradesh</td>
+<td>44.33</td>
+<td>48</td>
+</tr>
+<tr>
+<td>Koneru Lakshmaiah Education Foundation University</td>
+<td>Vaddeswaram</td>
+<td>Andhra Pradesh</td>
+<td>44.31</td>
+<td>49</td>
+</tr>
+<tr>
+<td>National Institute of Technology Calicut</td>
+<td>Calicut</td>
+<td>Kerala</td>
+<td>44.3</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Kalinga Institute of Industrial Technology</td>
+<td>Bhubaneswar</td>
+<td>Odisha</td>
+<td>44.27</td>
+<td>51</td>
+</tr>
+<tr>
+<td>Malaviya National Institute of Technology</td>
+<td>Jaipur</td>
+<td>Rajasthan</td>
+<td>43.88</td>
+<td>52</td>
+</tr>
+<tr>
+<td>Pondicherry Engineering College</td>
+<td>Puducherry</td>
+<td>Pondicherry</td>
+<td>43.7</td>
+<td>53</td>
+</tr>
+<tr>
+<td>Indian Institute of Technology Jodhpur</td>
+<td>Jodhpur</td>
+<td>Rajasthan</td>
+<td>43.4</td>
+<td>54</td>
+</tr>
+<tr>
+<td>Maulana Azad National Institute of Technology</td>
+<td>Bhopal</td>
+<td>Madhya Pradesh</td>
+<td>43.34</td>
+<td>55</td>
+</tr>
+<tr>
+<td>International Institute of Information Technology Bangalore</td>
+<td>Bengluru</td>
+<td>Karnataka</td>
+<td>43.2</td>
+<td>56</td>
+</tr>
+<tr>
+<td>National Institute of Technology Silchar</td>
+<td>Silchar</td>
+<td>Assam</td>
+<td>43.09</td>
+<td>57</td>
+</tr>
+<tr>
+<td>R. V. College of Engineering</td>
+<td>Bengaluru</td>
+<td>Karnataka</td>
+<td>42.98</td>
+<td>58</td>
+</tr>
+<tr>
+<td>Panjab University</td>
+<td>Chandigarh</td>
+<td>Chandigarh</td>
+<td>42.68</td>
+<td>59</td>
+</tr>
+<tr>
+<td>M. S. Ramaiah Institute of Technology</td>
+<td>Bengaluru</td>
+<td>Karnataka</td>
+<td>42.25</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Sardar Vallabhbhai National Institute of Technology</td>
+<td>Surat</td>
+<td>Gujarat</td>
+<td>42.11</td>
+<td>61</td>
+</tr>
+<tr>
+<td>Coimbatore Institute of Technology</td>
+<td>Coimbatore</td>
+<td>Tamil Nadu</td>
+<td>41.59</td>
+<td>62</td>
+</tr>
+<tr>
+<td>Defence Institute of Advanced Technology</td>
+<td>Pune</td>
+<td>Maharashtra</td>
+<td>41.37</td>
+<td>63</td>
+</tr>
+<tr>
+<td>National Institute of Technology Hamirpur</td>
+<td>Hamirpur</td>
+<td>Himachal Pradesh</td>
+<td>41.17</td>
+<td>64</td>
+</tr>
+<tr>
+<td>AU College of Engineering</td>
+<td>Visakhapatnam</td>
+<td>Andhra Pradesh</td>
+<td>40.88</td>
+<td>65</td>
+</tr>
+<tr>
+<td>Indraprastha Institute of Information Technology Delhi</td>
+<td>New Delhi</td>
+<td>Delhi</td>
+<td>40.69</td>
+<td>66</td>
+</tr>
+<tr>
+<td>B. M. S. College of Engineering</td>
+<td>Bengaluru</td>
+<td>Karnataka</td>
+<td>40.32</td>
+<td>67</td>
+</tr>
+<tr>
+<td>Kongu Engineering College</td>
+<td>Perundurai</td>
+<td>Tamil Nadu</td>
+<td>40.28</td>
+<td>68</td>
+</tr>
+<tr>
+<td>Dayalbagh Educational Institute</td>
+<td>Agra</td>
+<td>Uttar Pradesh</td>
+<td>39.98</td>
+<td>69</td>
+</tr>
+<tr>
+<td>Jaypee Institute of Information Technology</td>
+<td>Noida</td>
+<td>Uttar Pradesh</td>
+<td>39.88</td>
+<td>70</td>
+</tr>
+<tr>
+<td>Sri Venkateswara University</td>
+<td>Tirupati</td>
+<td>Andhra Pradesh</td>
+<td>39.55</td>
+<td>71</td>
+</tr>
+<tr>
+<td>Karunya Institute of Technology and Sciences</td>
+<td>Coimbatore</td>
+<td>Tamil Nadu</td>
+<td>39.27</td>
+<td>72</td>
+</tr>
+<tr>
+<td>PEC University of Technology</td>
+<td>Chandigarh</td>
+<td>Chandigarh</td>
+<td>39.24</td>
+<td>73</td>
+</tr>
+<tr>
+<td>Dr. B. R. Ambedkar National Institute of Technology</td>
+<td>Jalandhar</td>
+<td>Punjab</td>
+<td>38.65</td>
+<td>74</td>
+</tr>
+<tr>
+<td>College of Engineering Trivandrum</td>
+<td>Thiruvananthapuram</td>
+<td>Kerala</td>
+<td>38.29</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Bannari Amman Institute of Technology</td>
+<td>Sathyamangalam</td>
+<td>Tamil Nadu</td>
+<td>37.81</td>
+<td>76</td>
+</tr>
+<tr>
+<td>Vel Tech Rangarajan Dr. Sagunthala R &amp; D Institute of Science and Technology</td>
+<td>Chennai</td>
+<td>Tamil Nadu</td>
+<td>37.73</td>
+<td>77</td>
+</tr>
+<tr>
+<td>Siddaganga Institute of Technology</td>
+<td>Tumkur</td>
+<td>Karnataka</td>
+<td>37.72</td>
+<td>78</td>
+</tr>
+<tr>
+<td>B. S. Abdur Rahman Institute of Science and Technology</td>
+<td>Chennai</td>
+<td>Tamil Nadu</td>
+<td>37.57</td>
+<td>79</td>
+</tr>
+<tr>
+<td>University College of Engineering</td>
+<td>Hyderabad</td>
+<td>Telangana</td>
+<td>37.52</td>
+<td>80</td>
+</tr>
+<tr>
+<td>National Institute of Technology Raipur</td>
+<td>Raipur</td>
+<td>Chhattisgarh</td>
+<td>37.38</td>
+<td>81</td>
+</tr>
+<tr>
+<td>Kumaraguru College of Technology</td>
+<td>Coimbatore</td>
+<td>Tamil Nadu</td>
+<td>37.19</td>
+<td>82</td>
+</tr>
+<tr>
+<td>Bharati Vidyapeeth Deemed University College of Engineering</td>
+<td>Pune</td>
+<td>Maharashtra</td>
+<td>37.01</td>
+<td>83</td>
+</tr>
+<tr>
+<td>Jaypee University of Information Technology</td>
+<td>Solan</td>
+<td>Himachal Pradesh</td>
+<td>37</td>
+<td>84</td>
+</tr>
+<tr>
+<td>Sagi Ramakrishnam Raju Engineering College</td>
+<td>Bhimavaram</td>
+<td>Andhra Pradesh</td>
+<td>36.89</td>
+<td>85</td>
+</tr>
+<tr>
+<td>Guru Gobind Singh Indraprastha University</td>
+<td>New Delhi</td>
+<td>Delhi</td>
+<td>36.89</td>
+<td>85</td>
+</tr>
+<tr>
+<td>PES University</td>
+<td>Bengaluru</td>
+<td>Karnataka</td>
+<td>36.86</td>
+<td>87</td>
+</tr>
+<tr>
+<td>Army Institute of Technology</td>
+<td>Pune</td>
+<td>Maharashtra</td>
+<td>36.71</td>
+<td>88</td>
+</tr>
+<tr>
+<td>C. V. Raman College of Engineering</td>
+<td>Bhubaneswar</td>
+<td>Odisha</td>
+<td>36.7</td>
+<td>89</td>
+</tr>
+<tr>
+<td>Indian Institute of Information Technology Allahabad</td>
+<td>Allahabad</td>
+<td>Uttar Pradesh</td>
+<td>36.59</td>
+<td>90</td>
+</tr>
+<tr>
+<td width="541">Pandit Dwarka Prasad Mishra Indian Institute of Information Technology, Design and <br /> Manufacturing (IIITDM) Jabalpur</td>
+<td>Jabalpur</td>
+<td>Madhya Pradesh</td>
+<td>36.42</td>
+<td>91</td>
+</tr>
+<tr>
+<td>National Institute of Technology Agartala</td>
+<td>Agratala</td>
+<td>Tripura</td>
+<td>36.36</td>
+<td>92</td>
+</tr>
+<tr>
+<td>Government College of Technology</td>
+<td>Coimbatore</td>
+<td>Tamil Nadu</td>
+<td>36.35</td>
+<td>93</td>
+</tr>
+<tr>
+<td>Shri Mata Vaishno Devi University</td>
+<td>Katra</td>
+<td>Jammu and Kashmir</td>
+<td>36.28</td>
+<td>94</td>
+</tr>
+<tr>
+<td>Veermata Jijabai Technological Institute</td>
+<td>Mumbai</td>
+<td>Maharashtra</td>
+<td>36.24</td>
+<td>95</td>
+</tr>
+<tr>
+<td>Kalasalingam Academy of Research and Higher Education</td>
+<td>Srivilliputtur</td>
+<td>Tamil Nadu</td>
+<td>36.22</td>
+<td>96</td>
+</tr>
+<tr>
+<td>University College of Engingeering</td>
+<td>Kakinada</td>
+<td>Andhra Pradesh</td>
+<td>36.1</td>
+<td>97</td>
+</tr>
+<tr>
+<td>National Institute of Technology Meghalaya</td>
+<td>Shillong</td>
+<td>Meghalaya</td>
+<td>36</td>
+<td>98</td>
+</tr>
+<tr>
+<td>New Horizon College of Engineering</td>
+<td>Bengaluru</td>
+<td>Karnataka</td>
+<td>35.95</td>
+<td>99</td>
+</tr>
+<tr>
+<td>NITTE Meenakshi Institute of Technology</td>
+<td>Bengaluru</td>
+<td>Karnataka</td>
+<td>35.84</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
